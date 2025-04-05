@@ -3,9 +3,9 @@
 	"id": "skintoggle",
 	"version": "${version}",
 	"name": "SkinToggle",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A mod that dynamically hides and shows skin layers with the goal of being fully configurable.",
 	"authors": [
-		"Me!"
+		"S. C. Arzehd"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.scarzehd.sca_skintoggle.SkinToggle"
+			"com.scarzehd.skintoggle.SkinToggle"
 		]
 	},
 	"mixins": [

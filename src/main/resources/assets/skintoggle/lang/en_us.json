@@ -1,0 +1,74 @@
+{
+  "text.config.skin-toggle.category.left_arm": "Left Arm",
+
+  "text.config.skin-toggle.option.left_arm.mode": "Mode",
+  "text.config.skin-toggle.option.left_arm.mode.tooltip": "Disabled - The settings in the vanilla Skin Customization menu are used.\nToggle - The part toggles based on the Activation Type. This is identical to Flash On when Activation Type is set to\n Health High or Health Low.\nFlash On - The part is hidden by default but shown based on Activation Type.\nFlash Off - the opposite of Flash On.",
+  "text.config.skin-toggle.option.left_arm.flash_duration": "Flash Duration",
+  "text.config.skin-toggle.option.left_arm.flash_duration.tooltip": "Controls how long the part shows or hides for in ticks.\n\nOnly matters when Mode is set to Flash On or Flash Off.",
+  "text.config.skin-toggle.option.left_arm.activation_type": "Activation Type",
+  "text.config.skin-toggle.option.left_arm.health_threshold": "Health Threshold",
+
+  "text.config.skin-toggle.category.right_arm": "Right Arm",
+
+  "text.config.skin-toggle.option.right_arm.mode": "Mode",
+  "text.config.skin-toggle.option.right_arm.mode.tooltip": "Disabled - The settings in the vanilla Skin Customization menu are used.\nToggle - The part toggles based on the Activation Type. This is identical to Flash On when Activation Type is set to\n Health High or Health Low.\nFlash On - The part is hidden by default but shown based on Activation Type.\nFlash Off - the opposite of Flash On.",
+  "text.config.skin-toggle.option.right_arm.flash_duration": "Flash Duration",
+  "text.config.skin-toggle.option.right_arm.flash_duration.tooltip": "Controls how long the part shows or hides for in ticks.\n\nOnly matters when Mode is set to Flash On or Flash Off.",
+  "text.config.skin-toggle.option.right_arm.activation_type": "Activation Type",
+  "text.config.skin-toggle.option.right_arm.health_threshold": "Health Threshold",
+
+  "text.config.skin-toggle.category.left_leg": "Left Leg",
+
+  "text.config.skin-toggle.option.left_leg.mode": "Mode",
+  "text.config.skin-toggle.option.left_leg.mode.tooltip": "Disabled - The settings in the vanilla Skin Customization menu are used.\nToggle - The part toggles based on the Activation Type. This is identical to Flash On when Activation Type is set to\n Health High or Health Low.\nFlash On - The part is hidden by default but shown based on Activation Type.\nFlash Off - the opposite of Flash On.",
+  "text.config.skin-toggle.option.left_leg.flash_duration": "Flash Duration",
+  "text.config.skin-toggle.option.left_leg.flash_duration.tooltip": "Controls how long the part shows or hides for in ticks.\n\nOnly matters when Mode is set to Flash On or Flash Off.",
+  "text.config.skin-toggle.option.left_leg.activation_type": "Activation Type",
+  "text.config.skin-toggle.option.left_leg.health_threshold": "Health Threshold",
+
+  "text.config.skin-toggle.category.right_leg": "Right Leg",
+
+  "text.config.skin-toggle.option.right_leg.mode": "Mode",
+  "text.config.skin-toggle.option.right_leg.mode.tooltip": "Disabled - The settings in the vanilla Skin Customization menu are used.\nToggle - The part toggles based on the Activation Type. This is identical to Flash On when Activation Type is set to\n Health High or Health Low.\nFlash On - The part is hidden by default but shown based on Activation Type.\nFlash Off - the opposite of Flash On.",
+  "text.config.skin-toggle.option.right_leg.flash_duration": "Flash Duration",
+  "text.config.skin-toggle.option.right_leg.flash_duration.tooltip": "Controls how long the part shows or hides for in ticks.\n\nOnly matters when Mode is set to Flash On or Flash Off.",
+  "text.config.skin-toggle.option.right_leg.activation_type": "Activation Type",
+  "text.config.skin-toggle.option.right_leg.health_threshold": "Health Threshold",
+
+  "text.config.skin-toggle.category.cape": "Cape",
+
+  "text.config.skin-toggle.option.cape.mode": "Mode",
+  "text.config.skin-toggle.option.cape.mode.tooltip": "Disabled - The settings in the vanilla Skin Customization menu are used.\nToggle - The part toggles based on the Activation Type. This is identical to Flash On when Activation Type is set to\n Health High or Health Low.\nFlash On - The part is hidden by default but shown based on Activation Type.\nFlash Off - the opposite of Flash On.",
+  "text.config.skin-toggle.option.cape.flash_duration": "Flash Duration",
+  "text.config.skin-toggle.option.cape.flash_duration.tooltip": "Controls how long the part shows or hides for in ticks.\n\nOnly matters when Mode is set to Flash On or Flash Off.",
+  "text.config.skin-toggle.option.cape.activation_type": "Activation Type",
+  "text.config.skin-toggle.option.cape.health_threshold": "Health Threshold",
+
+  "text.config.skin-toggle.category.hat": "Hat",
+
+  "text.config.skin-toggle.option.hat.mode": "Mode",
+  "text.config.skin-toggle.option.hat.mode.tooltip": "Disabled - The settings in the vanilla Skin Customization menu are used.\nToggle - The part toggles based on the Activation Type. This is identical to Flash On when Activation Type is set to\n Health High or Health Low.\nFlash On - The part is hidden by default but shown based on Activation Type.\nFlash Off - the opposite of Flash On.",
+  "text.config.skin-toggle.option.hat.flash_duration": "Flash Duration",
+  "text.config.skin-toggle.option.hat.flash_duration.tooltip": "Controls how long the part shows or hides for in ticks.\n\nOnly matters when Mode is set to Flash On or Flash Off.",
+  "text.config.skin-toggle.option.hat.activation_type": "Activation Type",
+  "text.config.skin-toggle.option.hat.health_threshold": "Health Threshold",
+
+  "text.config.skin-toggle.category.jacket": "Jacket",
+
+  "text.config.skin-toggle.option.jacket.mode": "Mode",
+  "text.config.skin-toggle.option.jacket.mode.tooltip": "Disabled - The settings in the vanilla Skin Customization menu are used.\nToggle - The part toggles based on the Activation Type. This is identical to Flash On when Activation Type is set to\n Health High or Health Low.\nFlash On - The part is hidden by default but shown based on Activation Type.\nFlash Off - the opposite of Flash On.",
+  "text.config.skin-toggle.option.jacket.flash_duration": "Flash Duration",
+  "text.config.skin-toggle.option.jacket.flash_duration.tooltip": "Controls how long the part shows or hides for in ticks.\n\nOnly matters when Mode is set to Flash On or Flash Off.",
+  "text.config.skin-toggle.option.jacket.activation_type": "Activation Type",
+  "text.config.skin-toggle.option.jacket.health_threshold": "Health Threshold",
+
+  "text.config.skin-toggle.enum.skinPartMode.disabled": "Disabled",
+  "text.config.skin-toggle.enum.skinPartMode.toggle": "Toggle",
+  "text.config.skin-toggle.enum.skinPartMode.flash_on": "Flash On",
+  "text.config.skin-toggle.enum.skinPartMode.flash_off": "Flash Off",
+
+  "text.config.skin-toggle.enum.activationType.hit_entity": "Hit Entity",
+  "text.config.skin-toggle.enum.activationType.health_low": "Health Low",
+  "text.config.skin-toggle.enum.activationType.health_high": "Health High",
+  "text.config.skin-toggle.enum.activationType.take_damage": "Take Damage"
+}

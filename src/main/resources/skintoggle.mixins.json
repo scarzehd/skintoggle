@@ -1,9 +1,10 @@
 {
 	"required": true,
-	"package": "com.scarzehd.sca_skintoggle.mixin",
+	"package": "com.scarzehd.skintoggle.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"LivingEntityMixin",
+		"ClientPlayerEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
