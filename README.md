@@ -31,3 +31,7 @@ The part is changed when you take damage.
 How long to show or hide the part for in ticks. Only has an effect when Mode is Flash On or Flash Off.
 ### Health Threshold
 How high or low your health needs to be to trigger the change, inclusive. Only has an effect when Activation Type is Health High or Health Low.
+
+## Dependencies
+
+This mod uses [oωo-lib](https://modrinth.com/mod/owo-lib) for configuration. Additionally, [Mod Menu](https://modrinth.com/mod/modmenu) is recommended for the in-game configuration UI to work. [Fabric API](https://modrinth.com/mod/fabric-api) is required as well.
