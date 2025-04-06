@@ -8,11 +8,11 @@ import net.minecraft.client.network.AbstractClientPlayerEntity;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.server.world.ServerWorld;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(ClientPlayerEntity.class)
 abstract class ClientPlayerEntityMixin extends AbstractClientPlayerEntity {
@@ -21,11 +21,9 @@ abstract class ClientPlayerEntityMixin extends AbstractClientPlayerEntity {
         throw new AssertionError();
     }
 
-    @Inject(method = "damage", at = @At("HEAD"))
-    private void damageClient(DamageSource source, float amount, CallbackInfoReturnable info) {
-        if (amount <= 0) {
-            return;
-        }
+    @Override
+    public void onDamaged(DamageSource source) {
+
 
         ClientPlayerEntity self = ((ClientPlayerEntity)(Object)this);
 
@@ -34,10 +32,12 @@ abstract class ClientPlayerEntityMixin extends AbstractClientPlayerEntity {
                 partSwitcher.onPlayerDamage(self);
             }
         }
+
+        super.onDamaged(source);
     }
 
-    @Override
-    public void setHealth(float amount) {
+    @Inject(method = "updateHealth", at = @At("HEAD"))
+    public void setHealth(float amount, CallbackInfo info) {
         ClientPlayerEntity self = ((ClientPlayerEntity)(Object)this);
 
         if (self.getWorld().isClient() && self.isMainPlayer()) {
@@ -45,7 +45,5 @@ abstract class ClientPlayerEntityMixin extends AbstractClientPlayerEntity {
                 partSwitcher.onPlayerHealthChanged(self);
             }
         }
-
-        super.setHealth(amount);
     }
 }

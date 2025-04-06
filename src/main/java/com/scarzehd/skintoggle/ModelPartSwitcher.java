@@ -26,7 +26,9 @@ public class ModelPartSwitcher {
     public boolean flashTimerCallback(Timer timer) {
         boolean value = config.mode() != SkinToggleConfigModel.SkinPartMode.FLASH_ON; // If mode is set to FLASH_ON, turn it back off when the timer ends
 
-        MinecraftClient.getInstance().options.togglePlayerModelPart(part, value);
+        MinecraftClient.getInstance().options.setPlayerModelPart(part, value);
+
+        MinecraftClient.getInstance().options.write();
 
         return true;
     }
@@ -42,14 +44,16 @@ public class ModelPartSwitcher {
 
             if (mode == SkinToggleConfigModel.SkinPartMode.FLASH_ON || mode == SkinToggleConfigModel.SkinPartMode.FLASH_OFF) {
                 boolean value = mode == SkinToggleConfigModel.SkinPartMode.FLASH_ON;
-                MinecraftClient.getInstance().options.togglePlayerModelPart(part, value);
+                MinecraftClient.getInstance().options.setPlayerModelPart(part, value);
                 startTimer();
             }
 
             if (mode == SkinToggleConfigModel.SkinPartMode.TOGGLE) {
                 boolean value = !MinecraftClient.getInstance().options.isPlayerModelPartEnabled(part);
-                MinecraftClient.getInstance().options.togglePlayerModelPart(part, value);
+                MinecraftClient.getInstance().options.setPlayerModelPart(part, value);
             }
+
+            MinecraftClient.getInstance().options.write();
         }
     }
 
@@ -60,14 +64,16 @@ public class ModelPartSwitcher {
 
             if (mode == SkinToggleConfigModel.SkinPartMode.FLASH_ON || mode == SkinToggleConfigModel.SkinPartMode.FLASH_OFF) {
                 boolean value = mode == SkinToggleConfigModel.SkinPartMode.FLASH_ON;
-                options.togglePlayerModelPart(part, value);
+                options.setPlayerModelPart(part, value);
                 startTimer();
             }
 
             if (mode == SkinToggleConfigModel.SkinPartMode.TOGGLE) {
                 boolean value = !options.isPlayerModelPartEnabled(part);
-                options.togglePlayerModelPart(part, value);
+                options.setPlayerModelPart(part, value);
             }
+
+            options.write();
         }
     }
 
@@ -82,7 +88,9 @@ public class ModelPartSwitcher {
                 value = !value;
             }
 
-            MinecraftClient.getInstance().options.togglePlayerModelPart(part, value);
+            MinecraftClient.getInstance().options.setPlayerModelPart(part, value);
+
+            MinecraftClient.getInstance().options.write();
         }
     }
 }
